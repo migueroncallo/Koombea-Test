@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StandingsViewController" customModule="Koombea_Test" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="Cyt-IL-A71" id="SYJ-Fe-hei"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7GM-xq-bb9">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="hfr-y3-xit"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cyt-IL-A71">
+                    <rect key="frame" x="16" y="74" width="382" height="788"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="SP3-Dz-4RX"/>
+                        <outlet property="delegate" destination="-1" id="1KC-j5-oFI"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Cyt-IL-A71" secondAttribute="bottom" id="7BW-OK-4al"/>
+                <constraint firstItem="Cyt-IL-A71" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="O3l-Fw-NGj"/>
+                <constraint firstItem="7GM-xq-bb9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Pab-oW-AtY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7GM-xq-bb9" secondAttribute="trailing" id="SZ1-pl-xEe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cyt-IL-A71" secondAttribute="trailing" constant="16" id="WwA-8u-LL6"/>
+                <constraint firstItem="Cyt-IL-A71" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="gQr-Na-xFO"/>
+                <constraint firstItem="7GM-xq-bb9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sD4-c3-b5E"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
